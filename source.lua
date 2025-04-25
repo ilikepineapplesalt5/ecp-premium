@@ -1,3 +1,6 @@
+
+-- by ilikepineapplesalt4 on dc
+
 local Players = game:GetService("Players")
 local MarketplaceService = game:GetService("MarketplaceService")
 local UIS = game:GetService("UserInputService")
