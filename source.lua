@@ -13,9 +13,26 @@ local standbymode = false
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
     Name = "Evarge Control Panel Premium",
-    LoadingTitle = "ECP Cracked",
-    LoadingSubtitle = "by ilikepineapplesalt4",
-    Theme = "Default"
+    LoadingTitle = "ECP Premium",
+    LoadingSubtitle = "by Evarge",
+    Theme = "Default",
+    
+    Discord = {
+        Enabled = true,
+        Invite = "QmTSpZYZad",
+        RememberJoins = true
+    },
+    
+    KeySystem = true, 
+    KeySettings = {
+        Title = "ECP Recovered",
+        Subtitle = "Key System",
+        Note = "Join the discord. No linkvertise",
+        FileName = "keyeyeyy", 
+        SaveKey = true,
+        GrabKeyFromSite = false,
+        Key = {"nononono"} -- bro just join the discord
+    }
 })
 function findPlayerByPartialName(partialName)
     for _, player in ipairs(game.Players:GetPlayers()) do
@@ -104,38 +121,38 @@ local npcSettings = {
 local npcMode = false
 local npcThread
 local npcPhrases = {
-    "Hows the weather today? ☀️",
-    "I think I lost something... 🤔",
-    "What a great day! 😃",
-    "Hello traveler! 👋",
-    "I heard something strange... 👀",
-    "Did you hear that? 😨",
-    "Hmm... something feels off. 😵",
-    "Do you need help? 🤖",
-    "Just another day... ⏳",
-    "Be careful out there! ⚠️",
-    "Have you seen my keys? 🔑",
-    "I wonder what’s for dinner… 🍴",
-    "I feel like something's watching me... 👀",
-    "Are we there yet? ⏱️",
-    "I can’t remember where I was going... 😕",
-    "Oh, I love this song! 🎶",
-    "Maybe I should go for a walk. 🚶",
-    "Did you hear the latest news? 📰",
-    "I need a break. 😌",
-    "I think I left the oven on... 🍳",
-    "What’s that sound? 🎧",
-    "I'm so tired... 😴",
-    "Wait, did I leave the door open? 🚪",
-    "I should probably do some work... 📚",
-    "I'm not sure if I should go this way... 🤔",
-    "I think I saw a ghost... 👻",
-    "Sometimes I wonder what’s beyond the stars... 🌟",
-    "I feel like exploring today! 🌍",
-    "I should probably call my friend... 📞",
-    "The sky is so beautiful today! 🌅",
-    "Hmm, this place is kind of strange... 😕",
-    "I need to clean up... 🧹",
+    "Hows the weather today?",
+    "I think I lost something...",
+    "What a great day!",
+    "Hello traveler!",
+    "I heard something strange...",
+    "Did you hear that?",
+    "Hmm... something feels off.",
+    "Do you need help?",
+    "Just another day...",
+    "Be careful out there!",
+    "Have you seen my keys?",
+    "I wonder what’s for dinner…",
+    "I feel like something's watching me...",
+    "Are we there yet? ",
+    "I can’t remember where I was going...",
+    "Oh, I love this song!",
+    "Maybe I should go for a walk.",
+    "Did you hear the latest news?",
+    "I need a break.",
+    "I think I left the oven on...",
+    "What’s that sound?",
+    "I'm so tired...",
+    "Wait, did I leave the door open?",
+    "I should probably do some work...",
+    "I'm not sure if I should go this way...",
+    "I think I saw a ghost...",
+    "Sometimes I wonder what’s beyond the stars...",
+    "I feel like exploring today!",
+    "I should probably call my friend...",
+    "The sky is so beautiful today!",
+    "Hmm, this place is kind of strange...",
+    "I need to clean up...",
 
 }
 
@@ -238,6 +255,7 @@ local allcredits = [[
 Owner - Evarge
 Scripter - Roro
 Key - Henrick
+Recovery - okboy/ilikepineapples
 ]]
 
 RunService.RenderStepped:Connect(function(dt)
